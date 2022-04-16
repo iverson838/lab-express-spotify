@@ -1,0 +1,14 @@
+<ul>
+  {{#each artists}}
+
+    <li>
+      {{#if images.length}}
+        <img src='{{images.0.url}}' alt='{{name}}' />
+      {{/if}}
+      {{name}}
+      <a href='/albums/{{id}}'>View albums</a>
+    </li>
+
+  {{/each}}
+
+</ul>
